@@ -1,5 +1,5 @@
 # basic-postgresql-postgis-foss-workshop
-Basic Postgresql Postgis Workshop
+Basic Postgresql Postgis Workshop. This repo is created as a part of [OSGeo Nepal workshops](https://github.com/osgeonepal)
 
 ## Prerequisites 
 
