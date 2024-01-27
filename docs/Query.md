@@ -1,7 +1,37 @@
 # Queries & Tables 
 We won't go in deeper in this exercise, we will only go through some query example to learn how to filter, visualize & how to use spatial functions
 ## Basic table visualization
-Once you have query window open, Make sure you have selected your postgis-docker connection and you can visualize table data like following 
+
+Once you have query window open, Make sure you have selected your postgis-docker connection
+
+### Non spatial table operations 
+Practice with non spatial tables : 
+
+- Create table 
+
+```sql 
+CREATE TABLE public.wrc_students (
+	roll int8 NULL,
+    name varchar null
+);
+```
+
+- Insert value 
+
+```sql 
+INSERT INTO public.wrc_students
+(roll, "name")
+VALUES(13, 'juber');
+```
+
+- Retrieve rows 
+
+```sql
+select * from wrc_students ws
+where  roll = 13 
+```
+
+### Spatial table visualization
 
 Shoot following query to see everything in table 
 ``` sql
