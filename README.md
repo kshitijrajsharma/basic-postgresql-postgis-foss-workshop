@@ -2,9 +2,9 @@
 Basic Postgresql Postgis Workshop. This repo is created as a part of [OSGeo Nepal workshops](https://github.com/osgeonepal)
 
 ## Prerequisites 
-
-- Postgresql with Postgis enabled 
-- Dbeaver / PG Admin 
+In order to continue to this workshop we expect you to have at least following services on your machine
+- [Docker](https://docs.docker.com/get-docker/)
+- [Git](https://git-scm.com/downloads)
 
 ## Installation 
 
