@@ -1,0 +1,27 @@
+version: "3"
+services:
+  postgis-docker:
+    image: postgis/postgis:latest
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: mypassword
+    ports:
+      - "5436:5432" # mapping default port to 5436 outside to make sure it won't affect you if you have local postgres running
+    volumes: # it will populate sample data to db directly
+      - ./data/sql:/docker-entrypoint-initdb.d
+    networks:
+      - mynetwork
+
+  dbeaver:
+    image: dbeaver/cloudbeaver:latest # this is dbeaver community release docker image
+    depends_on:
+      - postgis-docker
+    ports:
+      - "8080:8978"
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
+    driver: bridge
