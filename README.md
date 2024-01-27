@@ -54,3 +54,7 @@ After dbeaver configuration, You are ready to play with the data. Navigate to [q
 - Run postgis in docker : https://postgis.net/documentation/getting_started/install_docker/ 
 - Postgresql Documentation : https://www.postgresql.org/docs/
 - Postgis Documentation : https://postgis.net/documentation/
+
+## Contributions 
+
+Contributions are highly appreciated ! You can enhance this tutorial for workshop or use it in your own ! Feel free to raise PR with your changes 
